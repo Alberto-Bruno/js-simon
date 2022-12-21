@@ -18,7 +18,7 @@ const secondsElement = document.getElementById('seconds');
 
 // Countdown a Natale 
 
-const countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
+const countDownDate = new Date("Dec 24, 2022 23:59:00").getTime();
 
 // Aggiorno il conto alla rovescia ogni secondo
 
@@ -56,6 +56,6 @@ const xmasDay = setInterval(function() {
     }
 
     if (distance < 0) {
-        clearInterval(x);
+        clearInterval();
     }
 }, 1000);
